@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            overflow-y: hidden;
+        }
+
+        /* Container Styles */
+
+        .container {
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .todo-container {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1116px;
+            padding-bottom: 20px;
+        }
+
+        /* Header Styles */
+
+        .header {
+            text-align: center;
+            font-size: 28px;
+            padding-top: 22px;
+            font-weight: 700;
+        }
+
+        /* Task Input Styles */
+
+        .task {
+
+            padding: 10px 0;
+        }
+
+        .add-task {
+            padding: 10px 0;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .a-t-input {
+            width: 66%;
+            border: 1px solid #ccc
+        }
+
+        .custom-input input {
+            width: 101%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .custom-input {
+            position: relative;
+            width: 82%;
+            margin: auto;
+        }
+
+        /* Task Label Styles */
+        .task-label {
+            padding: 5px;
+            height: 31px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Adjust the icon position for the task labels */
+        .task-label i {
+            margin-left: auto;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+
+
+        .custom-input i {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .fa-trash {
+            color: red;
+        }
+
+        .fa {
+            padding: 2px;
+        }
+
+
+        input[type="text"] {
+            padding: 5px;
+            height: 31px;
+
+        }
+
+        /* Button Styles */
+
+        .button {
+            background-color: #ffffff;
+            color: #19b928;
+            border: 11px solid #19b928;
+            border-radius: 3px;
+            padding: 0;
+            cursor: pointer;
+            margin-left: 2px;
+        }
+
+
+        .button:hover {
+            background-color: #2d8a02;
+        }
+
+        .colored-hr {
+            border: none;
+            border-top: 1px solid rgba(204, 204, 204, 0.787);
+        }
+
+        /* Search Section Styles */
+
+
+
+
+
+        
+
+
+
+        .search-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-input {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 66%;
+        }
+
+        .search-input::placeholder::before {
+            content: "\f002";
+            font-family: FontAwesome;
+            position: absolute;
+            padding: 5px;
+            color: #999;
+        }
+
+
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="todo-container">
+            <div class="header">Add Todo</div>
+            <div class="add-task">
+                <input class="a-t-input" type="text" placeholder="Add Todo">
+                <button class="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            </div>
+            <hr class="colored-hr">
+            <div class="center"></div>
+            <div class="search-container">
+                <input type="text" class="search-input"
+                    placeholder=" Search Tasks                                                                                                                                                                          🔍">
+            </div>
+
+            <div class="task">
+
+                <div class="custom-input">
+                    <span class="task-label">Your Task 1</span>
+                    <i class="fa fa-trash" aria-hidden="true" onclick="clearInput('task1')"></i>
+                </div>
+                <br>
+                <div class="custom-input">
+                    <span class="task-label">Your Task 2</span>
+                    <i class="fa fa-trash" aria-hidden="true" onclick="clearInput('task2')"></i>
+                </div>
+                <br>
+                <div class="custom-input">
+                    <span class="task-label">Your Task 3</span>
+                    <i class="fa fa-trash" aria-hidden="true" onclick="clearInput('task3')"></i>
+                </div>
+
+
+
+            </div>
+        </div>
+</body>
+
+</html>
