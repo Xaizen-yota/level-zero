@@ -17,7 +17,7 @@ This is a simple web-based to-do list application built with HTML, CSS, and Font
 
 ## Getting Started
 
-You can try the To-Do List Web App by visiting the [live demo](https://github.com/Xaizen-yota/My_Learning_Story/edit/main/dev/Html/level0).
+You can try the To-Do List Web App by visiting the [live demo](https://xaizen-yota.github.io/level-zero/).
 
 ## License
 
