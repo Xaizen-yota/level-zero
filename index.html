@@ -105,8 +105,8 @@
             color: red;
         }
 
-        .fa {
-            padding: 2px;
+        .faa {
+            color: white;
         }
 
 
@@ -119,13 +119,13 @@
         /* Button Styles */
 
         .button {
-            background-color: #ffffff;
-            color: #19b928;
-            border: 11px solid #19b928;
-            border-radius: 3px;
-            padding: 0;
             cursor: pointer;
             margin-left: 2px;
+            height: 35px;
+            width: 37px;
+            background-color: #2d8a02;
+            border-radius: 5px;
+
         }
 
 
@@ -139,13 +139,6 @@
         }
 
         /* Search Section Styles */
-
-
-
-
-
-        
-
 
 
         .search-container {
@@ -169,9 +162,15 @@
             color: #999;
         }
 
-
-
-       
+        .delete {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            padding-left: 17px;
+            height: 27px;
+        }
     </style>
 </head>
 
@@ -182,7 +181,7 @@
             <div class="header">Add Todo</div>
             <div class="add-task">
                 <input class="a-t-input" type="text" placeholder="Add Todo">
-                <button class="button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <button class="button"><i class="fa-solid  faa  fa-square-plus"></i></button>
             </div>
             <hr class="colored-hr">
             <div class="center"></div>
@@ -195,17 +194,17 @@
 
                 <div class="custom-input">
                     <span class="task-label">Your Task 1</span>
-                    <i class="fa fa-trash" aria-hidden="true" onclick="clearInput('task1')"></i>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
                 </div>
                 <br>
                 <div class="custom-input">
                     <span class="task-label">Your Task 2</span>
-                    <i class="fa fa-trash" aria-hidden="true" onclick="clearInput('task2')"></i>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
                 </div>
                 <br>
                 <div class="custom-input">
                     <span class="task-label">Your Task 3</span>
-                    <i class="fa fa-trash" aria-hidden="true" onclick="clearInput('task3')"></i>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
                 </div>
 
 
