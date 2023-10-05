@@ -146,6 +146,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
 
         .search-input {
@@ -171,6 +172,15 @@
             padding-left: 17px;
             height: 27px;
         }
+
+        .fa-magnifying-glass{
+    position: absolute;
+    right: 190px;
+    color: grey;
+        }
+
+
+
     </style>
 </head>
 
@@ -187,7 +197,8 @@
             <div class="center"></div>
             <div class="search-container">
                 <input type="text" class="search-input"
-                    placeholder=" Search Tasks                                                                                                                                                                          🔍">
+                placeholder=" Search Tasks " >
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
             <div class="task">
